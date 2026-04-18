@@ -82,11 +82,43 @@ nav a:hover {
 }
 
 /* SKILLS */
-.skills span {
-  display: inline-block;
+.skills a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   border: 1px solid white;
-  padding: 5px 10px;
-  margin: 5px;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: lightblue;
+}
+
+/* ICON */
+.skills a::before {
+  content: "i";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid white;
+  border-radius: 50%;
+
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* HOVER */
+.skills a:hover {
+  background: white;
+  color: black;
+}
+
+/* make icon invert with text */
+.skills a:hover::before {
+  border-color: black;
 }
 
 /* BLOG */
