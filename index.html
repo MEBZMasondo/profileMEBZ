@@ -1,25 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developer Profile</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<header>
-  <h2>Work Profile</h2>
-  <nav>
-    <!-- <a href="index.html">Home</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Work Profile</h2>
+      <nav>
+        <!-- <a href="index.html">Home</a>
     <a href="blog/index.html">Blog</a> -->
-  </nav>
-</header>
+      </nav>
+    </header>
 
-<!-- HOME -->
-<section class="container" id="home">
-
-  <!-- <div class="hero">
+    <!-- HOME -->
+    <section class="container" id="home">
+      <!-- <div class="hero">
     <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
 
     <h1>Mondli Eddie Masondo</h1>
@@ -32,58 +30,72 @@
     </div>
   </div> -->
 
-  <div class="hero">
+      <div class="hero">
+        <div class="hero-left">
+          <img
+            src="images/profile.jpg"
+            alt="Profile Photo"
+            class="profile-img"
+          />
+        </div>
 
-  <div class="hero-left">
-    <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
-  </div>
+        <div class="hero-right">
+          <h1>Mondli Eddie Masondo</h1>
+          <p>Software Developer</p>
+          <p>BSC Computer Science and Information Technology - UKZN</p>
 
-  <div class="hero-right">
-    <h1>Mondli Eddie Masondo</h1>
-    <p>Software Developer </p>
-    <p>BSC Computer Science and Information Technology - UKZN</p>
+          <div class="buttons">
+            <a href="docs/CV_Mondli_Masondo.pdf" download style="color: green"
+              >Download CV</a
+            >
+            <!-- <a href="docs/Resume_Mondli_Masondo.pdf" download>Download Resume</a> -->
+            <a href="mailto:mondlime8@gmail.com" style="color: blue"
+              >Send Email</a
+            >
+            <a href="blog/index.html" style="color: orange">View My Blog</a>
+          </div>
+        </div>
+      </div>
 
-    <div class="buttons">
-      <a href="docs/CV_Mondli_Masondo.pdf" download style="color: green;">Download CV</a>
-      <!-- <a href="docs/Resume_Mondli_Masondo.pdf" download>Download Resume</a> -->
-      <a href="mailto:mondlime8@gmail.com" style="color: blue;">Send Email</a>
-      <a href="blog/index.html" style="color: orange;">View My Blog</a>
-    </div>
-  </div>
+      <div class="section">
+        <h2>About Me</h2>
+        <p>
+          I design scalable systems, craft clean architectures, and turn complex
+          problems into maintainable software solutions.
+        </p>
+      </div>
 
-</div>
+      <div class="section">
+        <h2>Skills</h2>
+        <!-- <h2>Skills and Projects</h2> -->
+        <div class="skills">
+          <a href="skills/java.html">
+            <span>Java</span>
+          </a>
+          <a href="skills/spring-framework.html">
+            <span>Spring Framework</span>
+          </a>
+          <a href="skills/angular.html">
+            <span>Angular</span>
+          </a>
+          <a href="skills/flutter.html">
+            <span>Flutter</span>
+          </a>
+        </div>
+      </div>
 
-  <div class="section">
-    <h2>About Me</h2>
-    <p>
-      I design scalable systems, craft clean architectures, and turn complex problems
-      into maintainable software solutions.
-    </p>
-  </div>
+      <!-- <div class="section">
+        <h2>Projects</h2>
+        <div class="Projects">
+          <span>Project 1</span>
+          <span>Project 2</span>
+        </div>
+      </div>
+    </section> -->
 
-  <div class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Java</span>
-      <span>Spring Framework</span>
-      <span>Angular</span>
-      <span>Flutter</span>
-    </div>
-  </div>
-
-    <div class="section">
-    <h2>Projects</h2>
-    <div class="Projects">
-      <span>Project 1</span>
-      <span>Project 2</span>
-    </div>
-  </div>
-
-</section>
-
-<footer>
-  <p>© 2026 Work Profile — Built with discipline & clean code</p>
-</footer>
-
-</body>
+    <footer>
+      <!-- <p>© 2026 Work Profile</p> -->
+      <p>© <span id="year"></span>Mondli Masondo</p>
+    </footer>
+  </body>
 </html>

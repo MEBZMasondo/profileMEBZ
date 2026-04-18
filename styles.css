@@ -193,3 +193,33 @@ footer {
     height: 180px;
   }
 }
+
+
+/* For skills page */
+
+
+/* SIMPLE CARD STYLE */
+.card {
+  border: 1px solid white;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+/* BACK LINK */
+.back-link {
+  color: white;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* LIST STYLE CLEANUP */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}

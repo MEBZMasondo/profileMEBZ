@@ -22,3 +22,6 @@ document.getElementById("homeLink").addEventListener("click", function (e) {
   blog.style.display = "none";
   home.style.display = "block";
 });
+
+
+document.getElementById("year").textContent = new Date().getFullYear();
