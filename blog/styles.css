@@ -1,45 +1,36 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: black;
+  background-color: lightblue;  /* or any color you want */
   color: white;
 }
 
-/* HEADER */
-header {
-  padding: 20px;
-  border-bottom: 1px solid white;
+.field-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-header a {
+.card {
+  border: 1px solid white;
+  padding: 20px;
+  text-decoration: none;
+  color: blue;
+  display: inline-block;
+}
+
+.card:hover {
+  background: white;
+  color: green;
+}
+
+.topic-list li {
+  margin-bottom: 10px;
+}
+
+.topic-list a {
   color: white;
   text-decoration: none;
 }
 
-/* LAYOUT */
-.container {
-  padding: 30px;
-}
-
-/* FIELD */
-.field {
-  margin-bottom: 40px;
-}
-
-/* SUB FIELD */
-.subfield {
-  margin-top: 20px;
-  padding-left: 15px;
-  border-left: 1px solid white;
-}
-
-/* TOPICS */
-ul {
-  margin-top: 10px;
-}
-
-li {
-  margin-bottom: 8px;
+.topic-list a:hover {
+  text-decoration: underline;
 }
