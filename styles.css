@@ -1,0 +1,195 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* LAYOUT */
+.container {
+  padding: 30px;
+}
+
+/* HERO */
+/* .hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+} */
+
+/* PROFILE IMAGE (Round)*/
+/* .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-bottom: 15px;
+} */
+
+/* BUTTONS */
+.buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+.buttons a:hover {
+  background: white;
+  color: black;
+}
+
+/* SECTIONS */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+/* BLOG */
+#blog {
+  display: none;
+}
+
+.blog-post {
+  border: 1px solid white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .buttons a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* HERO LAYOUT */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* LEFT SIDE (IMAGE) */
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* RIGHT SIDE (TEXT) */
+.hero-right {
+  flex: 2;
+}
+
+/* PROFILE IMAGE - SQUARE + SCALABLE */
+.profile-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* BUTTONS */
+.buttons a {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 10px 15px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+.buttons a:hover {
+  background: white;
+  color: black;
+}
+
+/* RESPONSIVE (MOBILE STACK) */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+}

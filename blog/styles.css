@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+/* HEADER */
+header {
+  padding: 20px;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+/* LAYOUT */
+.container {
+  padding: 30px;
+}
+
+/* FIELD */
+.field {
+  margin-bottom: 40px;
+}
+
+/* SUB FIELD */
+.subfield {
+  margin-top: 20px;
+  padding-left: 15px;
+  border-left: 1px solid white;
+}
+
+/* TOPICS */
+ul {
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+}
