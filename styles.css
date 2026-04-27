@@ -283,10 +283,19 @@ nav a:hover {
 }
 
 /* FOOTER */
-footer {
+/* footer {
   text-align: center;
   padding: 20px;
   border-top: 1px solid white;
+} */
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid white;
+  font-size: 14px;
+  color: #ccc;
 }
 
 /* RESPONSIVE DESIGN */
