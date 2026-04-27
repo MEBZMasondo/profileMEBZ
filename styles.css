@@ -46,14 +46,16 @@ nav a:hover {
 } */
 
 /* PROFILE IMAGE (Round)*/
-/* .profile-img {
-  width: 150px;
-  height: 150px;
+.profile-img {
+  /* width: 150px;
+  height: 150px; */
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid white;
   margin-bottom: 15px;
-} */
+}
 
 /* BUTTONS */
 .buttons a {
@@ -240,12 +242,12 @@ nav a:hover {
 }
 
 /* RIGHT ARROW → shows clickable link */
-.skills a::after {
+/* .skills a::after {
   content: "→";
   font-size: 16px;
   margin-left: 14px;
   transition: transform 0.3s ease;
-}
+} */
 
 /* TEXT */
 .skills a span {
@@ -339,12 +341,12 @@ footer {
 }
 
 /* PROFILE IMAGE - SQUARE + SCALABLE */
-.profile-img {
+/* .profile-img {
   width: 220px;
   height: 220px;
   object-fit: cover;
   border: 2px solid white;
-}
+} */
 
 /* BUTTONS */
 .buttons a {
