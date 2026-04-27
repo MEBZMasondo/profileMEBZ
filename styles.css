@@ -81,8 +81,9 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-/* SKILLS */
-.skills a {
+/* SKILLS SETTING 1*/
+/* wide buttons */
+/* .skills a {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -90,10 +91,45 @@ nav a:hover {
   padding: 6px 12px;
   text-decoration: none;
   color: lightblue;
+} */
+
+/* less wide buttons */
+/* .skills a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid white;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: lightblue;
+} */
+
+/* SKILLS CONTAINER */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
+/* SKILL BUTTONS */
+/* .skills a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-width: 220px; 
+  padding: 10px 16px;
+
+  border: 1px solid white;
+  text-decoration: none;
+  color: lightblue;
+
+  transition: 0.3s;
+} */
+
+
 /* ICON */
-.skills a::before {
+/* .skills a::before {
   content: "i";
   display: inline-flex;
   align-items: center;
@@ -108,17 +144,129 @@ nav a:hover {
   font-size: 10px;
   font-weight: bold;
   line-height: 1;
-}
+} */
 
 /* HOVER */
+/* .skills a:hover {
+  background: white;
+  color: black;
+} */
+
+/* make icon invert with text */
+/* .skills a:hover::before {
+  border-color: black;
+} */
+
+
+
+/* SKILLS SETTING 2*/
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* SKILLS CONTAINER */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* SKILL BUTTONS */
+/* .skills a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-width: 250px; 
+  padding: 10px 16px;
+
+  border: 1px solid white;
+  text-decoration: none;
+  color: lightblue;
+
+  transition: 0.3s;
+} */
+
+.skills a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-width: 250px;   /* desktop balance */
+  width: auto;
+
+  padding: 10px 16px;
+
+  border: 1px solid white;
+  text-decoration: none;
+  color: lightblue;
+
+  transition: 0.3s;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .skills a {
+    width: 90%;
+    min-width: unset;
+  }
+}
+
+/* LEFT INFO ICON */
+.skills a::before {
+  content: "i";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid white;
+  border-radius: 50%;
+
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1;
+
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* RIGHT ARROW → shows clickable link */
+.skills a::after {
+  content: "→";
+  font-size: 16px;
+  margin-left: 14px;
+  transition: transform 0.3s ease;
+}
+
+/* TEXT */
+.skills a span {
+  flex: 1;
+}
+
+/* HOVER EFFECT */
 .skills a:hover {
   background: white;
   color: black;
+  transform: translateY(-2px);
 }
 
-/* make icon invert with text */
+/* ICON BORDER CHANGE */
 .skills a:hover::before {
   border-color: black;
+}
+
+/* ARROW MOVE ON HOVER */
+.skills a:hover::after {
+  transform: translateX(4px);
 }
 
 /* BLOG */
