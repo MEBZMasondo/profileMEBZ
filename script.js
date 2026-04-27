@@ -23,5 +23,8 @@ document.getElementById("homeLink").addEventListener("click", function (e) {
   home.style.display = "block";
 });
 
-
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Future expansion hook (filters, search, dynamic loading)
+
+console.log("Blog system loaded");

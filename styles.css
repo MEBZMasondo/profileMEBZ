@@ -255,3 +255,43 @@ ul {
 li {
   margin-bottom: 8px;
 }
+
+/*  */
+
+/* body {
+  background-color: rgb(53, 52, 52);
+  color: white;
+} */
+
+.field-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 2px;
+}
+
+.card {
+  border: 1px solid white;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+.card:hover {
+  background: white;
+  color: green;
+}
+
+.topic-list li {
+  margin-bottom: 10px;
+}
+
+.topic-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.topic-list a:hover {
+  text-decoration: underline;
+}
