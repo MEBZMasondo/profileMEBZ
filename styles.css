@@ -7,8 +7,9 @@
 }
 
 body {
-  background: black;
-  color: white;
+  /* background: black; */
+  /* color: white; */
+  color : black;
 }
 
 /* HEADER */
@@ -34,16 +35,13 @@ nav a:hover {
   padding: 30px;
 }
 
-/* HERO */
-/* .hero {
-  text-align: center;
-  margin-bottom: 40px;
+/* PROFILE IMAGE - SQUARE + SCALABLE */
+.profile-img-square {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 2px solid white;
 }
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-top: 10px;
-} */
 
 /* PROFILE IMAGE (Round)*/
 .profile-img {
@@ -55,6 +53,7 @@ nav a:hover {
   object-fit: cover;
   border: 2px solid white;
   margin-bottom: 15px;
+  border : solid 2px black;
 }
 
 /* BUTTONS */
@@ -83,84 +82,6 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-/* SKILLS SETTING 1*/
-/* wide buttons */
-/* .skills a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid white;
-  padding: 6px 12px;
-  text-decoration: none;
-  color: lightblue;
-} */
-
-/* less wide buttons */
-/* .skills a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid white;
-  padding: 6px 12px;
-  text-decoration: none;
-  color: lightblue;
-} */
-
-/* SKILLS CONTAINER */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-
-/* SKILL BUTTONS */
-/* .skills a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-
-  min-width: 220px; 
-  padding: 10px 16px;
-
-  border: 1px solid white;
-  text-decoration: none;
-  color: lightblue;
-
-  transition: 0.3s;
-} */
-
-
-/* ICON */
-/* .skills a::before {
-  content: "i";
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 16px;
-  height: 16px;
-
-  border: 1px solid white;
-  border-radius: 50%;
-
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 1;
-} */
-
-/* HOVER */
-/* .skills a:hover {
-  background: white;
-  color: black;
-} */
-
-/* make icon invert with text */
-/* .skills a:hover::before {
-  border-color: black;
-} */
-
-
-
 /* SKILLS SETTING 2*/
 .section {
   margin-bottom: 40px;
@@ -179,37 +100,22 @@ nav a:hover {
   gap: 14px;
 }
 
-/* SKILL BUTTONS */
-/* .skills a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-
-  min-width: 250px; 
-  padding: 10px 16px;
-
-  border: 1px solid white;
-  text-decoration: none;
-  color: lightblue;
-
-  transition: 0.3s;
-} */
-
 .skills a {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-
   min-width: 250px;   /* desktop balance */
   width: auto;
-
   padding: 10px 16px;
-
-  border: 1px solid white;
   text-decoration: none;
-  color: lightblue;
-
   transition: 0.3s;
+}
+
+.skills.primary {
+  border: solid 1px black;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
 }
 
 /* Mobile responsiveness */
@@ -240,14 +146,6 @@ nav a:hover {
   margin-right: 10px;
   flex-shrink: 0;
 }
-
-/* RIGHT ARROW → shows clickable link */
-/* .skills a::after {
-  content: "→";
-  font-size: 16px;
-  margin-left: 14px;
-  transition: transform 0.3s ease;
-} */
 
 /* TEXT */
 .skills a span {
@@ -281,13 +179,6 @@ nav a:hover {
   padding: 15px;
   margin-bottom: 15px;
 }
-
-/* FOOTER */
-/* footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid white;
-} */
 
 footer {
   margin-top: 50px;
@@ -349,22 +240,58 @@ footer {
   flex: 2;
 }
 
-/* PROFILE IMAGE - SQUARE + SCALABLE */
-/* .profile-img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border: 2px solid white;
-} */
-
 /* BUTTONS */
-.buttons a {
+.button {
   display: inline-block;
   margin: 10px 10px 0 0;
-  padding: 10px 15px;
-  border: 1px solid white;
-  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #1e1e1e;
+  color: #f5f5f5;
   text-decoration: none;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Main action */
+.button.primary {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+.button.primary:hover {
+  background: #22c55e;
+  color: white;
+}
+
+/* Information button */
+.button.info {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.button.info:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Simple text-style link */
+.button.link {
+  border-color: transparent;
+  background: transparent;
+  color: #cbd5e1;
+}
+
+.button.link:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .buttons a:hover {
@@ -387,8 +314,6 @@ footer {
 
 
 /* For skills page */
-
-
 /* SIMPLE CARD STYLE */
 .card {
   border: 1px solid white;
@@ -414,13 +339,6 @@ ul {
 li {
   margin-bottom: 8px;
 }
-
-/*  */
-
-/* body {
-  background-color: rgb(53, 52, 52);
-  color: white;
-} */
 
 .field-list {
   display: flex;
